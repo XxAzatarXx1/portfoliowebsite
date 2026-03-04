@@ -7,9 +7,9 @@ nav {
     display: flex;
     justify-content: space-around;
   /*  background-color: rgb(47, 4, 71); */
-    background-image: linear-gradient(to right, purple, black);
-    color: rgb(94, 255, 0);
-    padding: 18px 0;
+    background-color: lime;
+    color: purple;
+    padding: 10px 0;
 }
 nav ul {
     display: flex;
@@ -20,11 +20,33 @@ nav ul {
 nav ul li {
     list-style-type: none;
     font-size: 18px;
-     font-family: "Creepster", system-ui;
+     font-family: "Mono", system-ui;
 }
 
 .logo {
     font-family: "Caveat", cursive;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bolder;
+}
+
+.hero {
+    background-image: linear-gradient(to right, purple, black);
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-left .one {
+    font-size: 60px;
+    color:rgb(94, 255, 0)
+}
+
+.hero-left .two {
+    font-size: 40px;
+    color:rgb(94, 255, 0)
+}
+
+.bold {
+    font-weight: bold;
 }
