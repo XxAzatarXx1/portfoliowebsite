@@ -38,6 +38,12 @@ nav ul li {
     gap: 130px;
 }
 
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .hero-left .one {
     font-size: 60px;
     color:rgb(94, 255, 0);
@@ -75,23 +81,32 @@ nav ul li {
     cursor: pointer;
     font-size: 17px;
     font-weight: bolder;
+    transition: all 2s;
+}
+
+.btn:hover {
+    background-color: magenta;
 }
 
 .project {
             display: flex;
             align-items: center;
             font-family: "Roboto", sans-serif;
+            border-top: 2px solid lime;
+            padding: 22px 100px;
             background-image: linear-gradient(to right, purple, black);
         }
 
         .project-image img {
-            width: 49.5vw;
+            width: 29.5vw;
+            margin: 25px;
+            border-radius: 20px;
         }
 
         .project-info {
             display: flex;
             flex-direction: column;
-            padding: 12px;
+            padding: 42px;
         }
 
         .project-info .text {
@@ -108,4 +123,12 @@ nav ul li {
 
         .row-reverse {
             flex-direction: row-reverse;
+        }
+
+        footer {
+            background-color: lime;
+            color: purple;
+            padding: 20px;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
         }
