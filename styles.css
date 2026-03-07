@@ -10,6 +10,9 @@ nav {
     background-color: lime;
     color: purple;
     padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 nav ul {
     display: flex;
@@ -19,8 +22,14 @@ nav ul {
 
 nav ul li {
     list-style-type: none;
-    font-size: 18px;
+    font-size: 17px;
      font-family: "Mono", system-ui;
+}
+
+nav ul li a {
+    color: purple;
+    text-decoration: none;
+    transition: all 0.5s;
 }
 
 .logo {
@@ -36,6 +45,7 @@ nav ul li {
     justify-content: center;
     align-items: center;
     gap: 130px;
+    flex-direction: column-reverse;
 }
 
 .hero-left {
@@ -55,6 +65,8 @@ nav ul li {
     font-size: 40px;
     color:rgb(94, 255, 0);
     font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 .bold {
@@ -81,7 +93,7 @@ nav ul li {
     cursor: pointer;
     font-size: 17px;
     font-weight: bolder;
-    transition: all 2s;
+    transition: all 0.5s;
 }
 
 .btn:hover {
@@ -131,4 +143,55 @@ nav ul li {
             padding: 20px;
             text-align: center;
             font-family: "Roboto", sans-serif;
+        }
+
+        @media screen and (max-width: 950px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                gap: 12px;
+            }
+
+            .hero-left {
+                align-items: center;
+            }
+
+            .project {
+                padding: 1px;
+            }
+
+            @media screen and (max-width: 650px) {
+                 .hero-left .one {
+                    font-size: 40px;
+                    text-align: center;
+                 }
+
+                 .hero-left .two {
+                    font-size: 30px;
+                    text-align: center;
+                 }
+
+                 .project {
+                    flex-direction: column;
+                 }
+
+                 .project-image img {
+                    width: 80vw;
+                    margin: 5px 35px;
+                 }
+
+                 .project-info {
+                    padding: 15px 23px;
+                 }
+
+                 project-image img {
+                    width: 80vw;
+                    margin: 15px 23px;
+                 }
+            }
         }
